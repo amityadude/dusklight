@@ -1501,6 +1501,11 @@ SettingsWindow::SettingsWindow(bool prelaunch) : mPrelaunch(prelaunch) {
             });
 
         leftPane.add_section("Penalties and Drop Rates");
+                config_bool_select(leftPane, rightPane, getSettings().game.restartAtAreaStart,
+            {
+                .key = "Restart at Area Start on Death",
+                .helpText = "On: dying sends you back to the start of the area/dungeon. Off: dying respawns you in the room you died in, like vanilla.",
+            });
         leftPane.register_control(
             leftPane.add_child<NumberButton>(NumberButton::Props{
                 .key = "Death Rupee Tax",
