@@ -3150,7 +3150,8 @@ int daAlink_c::procCoDead() {
                 roomNo = field_0x3198;
             } else {
                 // If Hyrule Castle sewers, reuse old respawn logic:
-                if (checkStageName("R_SP107")) {
+                if (checkStageName("R_SP107") || 
+                !dusk::getSettings().game.restartAtAreaStart) {
                     startRestartRoom(mode, 0xC9, 0, 1);
                     return 1;
                 }
