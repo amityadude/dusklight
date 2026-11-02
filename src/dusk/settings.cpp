@@ -60,6 +60,7 @@ UserSettings g_userSettings = {
         .halfMyShitIsGone {"game.halfMyShitIsGone", false},
         .quarterDeathTax {"game.quarterDeathTax", false},
         .deathRupeeTax {"game.deathRupeeTax", 0},
+        .restartAtAreaStart {"game.restartAtAreaStart", true},
         .instantDeath {"game.instantDeath", false},
         .fastClimbing {"game.fastClimbing", false},
         .noMissClimbing {"game.noMissClimbing", false},
@@ -343,6 +344,7 @@ void registerSettings() {
     Register(g_userSettings.game.halfMyShitIsGone);
     Register(g_userSettings.game.quarterDeathTax);
     Register(g_userSettings.game.deathRupeeTax);
+    Register(g_userSettings.game.restartAtAreaStart);
     Register(g_userSettings.game.instantDeath);
     Register(g_userSettings.game.fastClimbing);
     Register(g_userSettings.game.fastTears);
