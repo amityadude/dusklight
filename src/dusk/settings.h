@@ -242,6 +242,7 @@ struct UserSettings {
         ConfigVar<bool> halfMyShitIsGone;
         ConfigVar<bool> quarterDeathTax;
         ConfigVar<int> deathRupeeTax;
+        ConfigVar<bool> restartAtAreaStart;
         ConfigVar<bool> instantDeath;
         ConfigVar<bool> fastClimbing;
         ConfigVar<bool> noMissClimbing;
